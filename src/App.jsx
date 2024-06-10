@@ -11,7 +11,7 @@ function App() {
     
     try {
       const response = await axios.get(URL_PRODUTOS)
-      //console.log(response.data)
+      console.log(response.data)
       setData(response.data)
     } catch (error) {
       console.log(`Erro ao buscar o produto: ${error}`);
